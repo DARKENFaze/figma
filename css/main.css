@@ -347,3 +347,31 @@ nav {
     left: -25px;
   }
 }
+.aksiya-sc {
+  background: rgb(23, 105, 106);
+  padding: 15px;
+}
+.aksiya-sc .aksiya-texts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.aksiya-sc .aksiya-texts span {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 18px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.aksiya-sc .aksiya-texts p {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  cursor: pointer;
+}
