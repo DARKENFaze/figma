@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Lato", "sans-serif";
+}
+
+.container {
+  max-width: 1760px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  outline: none;
+}
+
+header {
+  background: rgb(30, 33, 44);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+}
+
+.header-top-texts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header-top-texts p {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.header-top-texts p span {
+  font-weight: 900;
+}
+
+.theUS,
+.form-panel,
+.dtbc {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dtbc {
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .header-top-texts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dtbc {
+    gap: 16px;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .theUS,
+  .form-panel {
+    justify-content: flex-end;
+    width: 100%;
+  }
+  p {
+    text-align: center;
+    width: 100%;
+  }
+}
+footer {
+  background: rgb(30, 33, 44);
+  padding-bottom: 25px;
+}
+footer .footer-contents-father {
+  display: flex;
+  justify-content: space-between; /* Space between each section */
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px; /* Space between sections */
+  max-width: 1200px; /* Limit width for larger screens */
+  margin: 0 auto; /* Center the footer */
+}
+@media (max-width: 768px) {
+  footer .footer-contents-father {
+    flex-direction: column; /* Stack sections on top of each other on small screens */
+    align-items: center; /* Center align all items */
+    text-align: center; /* Center the text */
+  }
+}
+footer .footer-contents-father .HLP,
+footer .footer-contents-father .SHOP,
+footer .footer-contents-father .get_in_touch,
+footer .footer-contents-father .download-apps {
+  flex: 1; /* Make sections flexible in width */
+  min-width: 200px; /* Ensure a minimum width */
+  margin-bottom: 20px; /* Add space below each section */
+}
+footer .footer-contents-father .HLP span,
+footer .footer-contents-father .SHOP span,
+footer .footer-contents-father .get_in_touch span,
+footer .footer-contents-father .download-apps span {
+  color: rgb(255, 255, 255);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+footer .footer-contents-father .HLP .help_bottom-texts,
+footer .footer-contents-father .HLP .shop_bottom_texts,
+footer .footer-contents-father .HLP .get_in_touch_contents,
+footer .footer-contents-father .SHOP .help_bottom-texts,
+footer .footer-contents-father .SHOP .shop_bottom_texts,
+footer .footer-contents-father .SHOP .get_in_touch_contents,
+footer .footer-contents-father .get_in_touch .help_bottom-texts,
+footer .footer-contents-father .get_in_touch .shop_bottom_texts,
+footer .footer-contents-father .get_in_touch .get_in_touch_contents,
+footer .footer-contents-father .download-apps .help_bottom-texts,
+footer .footer-contents-father .download-apps .shop_bottom_texts,
+footer .footer-contents-father .download-apps .get_in_touch_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .footer-contents-father .HLP .help_bottom-texts p,
+footer .footer-contents-father .HLP .shop_bottom_texts p,
+footer .footer-contents-father .HLP .get_in_touch_contents p,
+footer .footer-contents-father .SHOP .help_bottom-texts p,
+footer .footer-contents-father .SHOP .shop_bottom_texts p,
+footer .footer-contents-father .SHOP .get_in_touch_contents p,
+footer .footer-contents-father .get_in_touch .help_bottom-texts p,
+footer .footer-contents-father .get_in_touch .shop_bottom_texts p,
+footer .footer-contents-father .get_in_touch .get_in_touch_contents p,
+footer .footer-contents-father .download-apps .help_bottom-texts p,
+footer .footer-contents-father .download-apps .shop_bottom_texts p,
+footer .footer-contents-father .download-apps .get_in_touch_contents p {
+  color: rgb(185, 185, 185);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+}
+footer .footer-contents-father .HLP .social-media,
+footer .footer-contents-father .SHOP .social-media,
+footer .footer-contents-father .get_in_touch .social-media,
+footer .footer-contents-father .download-apps .social-media {
+  display: flex;
+  gap: 15px; /* Adjusted gap for spacing */
+  margin-top: 15px; /* Space between text and icons */
+}
+footer .footer-contents-father .download-apps h2 {
+  color: rgb(255, 255, 255);
+}
+footer .footer-contents-father .download-apps .play_and_apps {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of buttons */
+  gap: 15px; /* Space between app store buttons */
+}
+footer .footer-contents-father .download-apps .play_and_apps .app_and_text,
+footer .footer-contents-father .download-apps .play_and_apps .playmarket_and_text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgb(66, 69, 81);
+  padding: 10px;
+  border-radius: 7px;
+  min-width: 140px; /* Ensure buttons don't get too small */
+}
+footer .footer-contents-father .download-apps .play_and_apps .app_and_text .ply_textsss,
+footer .footer-contents-father .download-apps .play_and_apps .playmarket_and_text .ply_textsss {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+}
+footer .copright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Border line at the top */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+@media (max-width: 768px) {
+  footer .copright {
+    flex-direction: column; /* Stack items on top of each other */
+    align-items: center; /* Center align */
+    text-align: center; /* Center the text */
+  }
+}
+footer .copright .cop_one {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px; /* Space below the copyright section */
+}
+footer .copright .cop_one span,
+footer .copright .cop_one p {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+footer .copright .cop_two span {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid rgb(215, 218, 221);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar ul li {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.nav-bar ul li a {
+  color: rgb(66, 69, 81);
+  text-decoration: none;
+}
+
+.red-sale {
+  color: rgb(255, 66, 66);
+}
+
+.search-inp {
+  display: flex;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+}
+
+.search-inp input {
+  flex-grow: 1;
+  height: 44px;
+  padding: 10px 40px 10px 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(215, 218, 221);
+}
+
+.search-inp img {
+  position: relative;
+  left: -30px;
+  cursor: pointer;
+}
+
+.like-shop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.like-shop p {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(66, 69, 81);
+}
+
+.aqua-bg-text {
+  background: rgb(3, 206, 164);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+  .navigation-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .search-inp {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .like-shop {
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .nav-bar ul {
+    gap: 5px;
+  }
+  .search-inp input {
+    padding: 10px 30px 10px 10px;
+  }
+  .search-inp img {
+    left: -25px;
+  }
+}

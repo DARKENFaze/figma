@@ -1,0 +1,62 @@
+header {
+  background: rgba(30, 33, 44, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 15px;
+}
+
+.header-top-texts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header-top-texts p {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.header-top-texts p span {
+  font-weight: 900;
+}
+
+.theUS,
+.form-panel,
+.dtbc {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dtbc {
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .header-top-texts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dtbc {
+    gap: 16px;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .theUS,
+  .form-panel {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    width: 100%;
+  }
+}

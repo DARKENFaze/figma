@@ -1,0 +1,138 @@
+footer {
+  background: rgba(30, 33, 44, 1);
+  padding-bottom: 25px;
+
+  .footer-contents-father {
+    display: flex;
+    justify-content: space-between; /* Space between each section */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between sections */
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 0 auto; /* Center the footer */
+
+    @media (max-width: 768px) {
+      flex-direction: column; /* Stack sections on top of each other on small screens */
+      align-items: center; /* Center align all items */
+      text-align: center; /* Center the text */
+    }
+
+    .HLP,
+    .SHOP,
+    .get_in_touch,
+    .download-apps {
+      flex: 1; /* Make sections flexible in width */
+      min-width: 200px; /* Ensure a minimum width */
+      margin-bottom: 20px; /* Add space below each section */
+
+      span {
+        color: rgba(255, 255, 255, 1);
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25.6px;
+        letter-spacing: 1px;
+        text-align: left;
+      }
+
+      .help_bottom-texts,
+      .shop_bottom_texts,
+      .get_in_touch_contents {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        p {
+          color: rgb(185, 185, 185);
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25.6px;
+          text-align: left;
+        }
+      }
+
+      .social-media {
+        display: flex;
+        gap: 15px; /* Adjusted gap for spacing */
+        margin-top: 15px; /* Space between text and icons */
+      }
+    }
+
+    .download-apps {
+      h2 {
+        color: rgba(255, 255, 255, 1);
+      }
+      .play_and_apps {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping of buttons */
+        gap: 15px; /* Space between app store buttons */
+
+        .app_and_text,
+        .playmarket_and_text {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          background: rgba(66, 69, 81, 1);
+          padding: 10px;
+          border-radius: 7px;
+          min-width: 140px; /* Ensure buttons don't get too small */
+
+          img {
+            // width: 100%; /* Ensure images fit within their containers */
+          }
+
+          .ply_textsss {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .copright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Border line at the top */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+
+    @media (max-width: 768px) {
+      flex-direction: column; /* Stack items on top of each other */
+      align-items: center; /* Center align */
+      text-align: center; /* Center the text */
+    }
+
+    .cop_one {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 1);
+      margin-bottom: 10px; /* Space below the copyright section */
+
+      span,
+      p {
+        font-family: Lato;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+      }
+    }
+
+    .cop_two {
+      span {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25.6px;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
