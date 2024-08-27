@@ -1,29 +1,30 @@
 footer {
   background: rgba(30, 33, 44, 1);
   padding-bottom: 25px;
+  padding-top: 20px;
 
   .footer-contents-father {
     display: flex;
-    justify-content: space-between; /* Space between each section */
-    align-items: flex-start; /* Align items at the top */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 20px; /* Space between sections */
-    max-width: 1200px; /* Limit width for larger screens */
-    margin: 0 auto; /* Center the footer */
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 
     @media (max-width: 768px) {
-      flex-direction: column; /* Stack sections on top of each other on small screens */
-      align-items: center; /* Center align all items */
-      text-align: center; /* Center the text */
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     .HLP,
     .SHOP,
     .get_in_touch,
     .download-apps {
-      flex: 1; /* Make sections flexible in width */
-      min-width: 200px; /* Ensure a minimum width */
-      margin-bottom: 20px; /* Add space below each section */
+      flex: 1;
+      min-width: 200px;
+      margin-bottom: 20px;
 
       span {
         color: rgba(255, 255, 255, 1);
@@ -54,8 +55,8 @@ footer {
 
       .social-media {
         display: flex;
-        gap: 15px; /* Adjusted gap for spacing */
-        margin-top: 15px; /* Space between text and icons */
+        gap: 15px;
+        margin-top: 15px;
       }
     }
 
@@ -65,8 +66,8 @@ footer {
       }
       .play_and_apps {
         display: flex;
-        flex-wrap: wrap; /* Allow wrapping of buttons */
-        gap: 15px; /* Space between app store buttons */
+        flex-wrap: wrap;
+        gap: 15px;
 
         .app_and_text,
         .playmarket_and_text {
@@ -76,10 +77,9 @@ footer {
           background: rgba(66, 69, 81, 1);
           padding: 10px;
           border-radius: 7px;
-          min-width: 140px; /* Ensure buttons don't get too small */
+          min-width: 140px;
 
           img {
-            // width: 100%; /* Ensure images fit within their containers */
           }
 
           .ply_textsss {
@@ -98,13 +98,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Border line at the top */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap;
 
     @media (max-width: 768px) {
-      flex-direction: column; /* Stack items on top of each other */
-      align-items: center; /* Center align */
-      text-align: center; /* Center the text */
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     .cop_one {
@@ -112,7 +111,7 @@ footer {
       align-items: center;
       gap: 8px;
       color: rgba(255, 255, 255, 1);
-      margin-bottom: 10px; /* Space below the copyright section */
+      margin-bottom: 10px;
 
       span,
       p {

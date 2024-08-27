@@ -20,21 +20,26 @@ nav {
 .nav-bar ul {
   display: flex;
   gap: 20px;
+  margin-bottom: 0;
 }
 
 .nav-bar ul li {
   font-family: Lato, sans-serif;
   font-size: 16px;
   font-weight: 700;
+  
+  a {
+    color: rgba(66, 69, 81, 1);
+    text-decoration: none;
+  }
 }
 
-.nav-bar ul li a {
+.nav-bar ul li {
   color: rgba(66, 69, 81, 1);
   text-decoration: none;
-}
-
-.red-sale {
-  color: rgba(255, 66, 66, 1);
+  .red-sale {
+    color: rgb(255, 52, 52);
+  }
 }
 
 .search-inp {

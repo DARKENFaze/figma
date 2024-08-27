@@ -1,0 +1,30 @@
+.two-button {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  .btn-1 {
+    border: 1px solid rgba(23, 105, 106, 1);
+    padding: 15px 35px;
+    border-radius: 4px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(23, 105, 106, 1);
+  }
+  .btn-2 {
+    background: rgba(23, 105, 106, 1);
+    width: Hug (229px) px;
+    height: Hug (52px) px;
+    padding: 15px 40px;
+    gap: 10px;
+    border-radius: 4px;
+    opacity: 0px;
+    border: none;
+
+    font-family: Lato;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+  }
+}
